@@ -5,17 +5,19 @@ import { styled } from '@mui/system';
 
 // Styled component for the background container
 const BackgroundContainer = styled('div')({
-  position: 'absolute', // Positioning to cover the entire viewport
+  position: 'absolute',
   top: 0,
   left: 0,
-  width: '100%', // Full width of the viewport
-  height: '100%', // Full height of the viewport
-  overflow: 'hidden', // Prevent scrollbars
-  background: '#000', // Black background color
-  color: '#0f0', // Green text color
-  fontFamily: 'monospace', // Monospace font for code-like appearance
-  fontSize: '14px', // Font size for the code text
+  width: '100%',
+  height: '100%',
+  zIndex: -1,  // Ensure background is behind other components
+  overflow: 'hidden',
+  background: '#000',
+  color: '#0f0',
+  fontFamily: 'monospace',
+  fontSize: '14px',
 });
+
 
 // Styled component for each line of code
 const CodeLine = styled(motion.div)(({ index, totalLines }) => ({

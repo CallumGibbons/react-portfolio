@@ -2,7 +2,6 @@ import React, { useRef, useState, useEffect } from 'react';
 import Typography from '@mui/material/Typography';
 import { styled } from '@mui/system';
 import { motion, useScroll, useTransform } from 'framer-motion';
-import AnimatedBackground from './AnimatedBackground';
 
 // Styled component for the home container
 const HomeContainer = styled('div')({
@@ -47,7 +46,6 @@ const Home = () => {
 
   return (
     <HomeContainer>
-      <AnimatedBackground /> {/* Background animation component */}
       <Content ref={textRef}>
         <Typography variant="h2">
           {/* Map over words and apply motion effects */}

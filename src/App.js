@@ -5,6 +5,7 @@ import About from './Components/About';
 import Projects from './Components/Projects';
 import Footer from './Components/Footer';
 import Loading from './Components/Loading';
+import AnimatedBackground from './Components/AnimatedBackground';
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -23,6 +24,7 @@ function App() {
 
   return (
     <div>
+      <AnimatedBackground/>
       <Header />
       <Home />
       <About />
